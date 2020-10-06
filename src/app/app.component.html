@@ -1,9 +1,22 @@
 <div class="container d-flex flex-column align-items-center justify-content-center h-100">
 
-  <div style="width: 20em">
-    <div class="d-flex justify-content-between">
-      <label for="playerId">ID</label>
-      <input id="playerId" type="text" class="form-control" [(ngModel)]="playerId">
+  <div style="width: 30em" class="my-4">
+    <div class="d-flex align-items-baseline">
+      <div style="width: 8em" class="mr-2" for="playerId">Player ID</div>
+      <input type="text" class="form-control mr-2" [(ngModel)]="playerId">
+    </div>
+    <div class="d-flex align-items-baseline">
+      <div style="width: 8em" class="mr-2" for="playerId">Size.X</div>
+      <input type="text" class="form-control mr-2" [(ngModel)]="sizeX">
+    </div>
+    <div class="d-flex align-items-baseline">
+      <div style="width: 8em" class="mr-2" for="playerId">Size.Y</div>
+      <input type="text" class="form-control mr-2" [(ngModel)]="sizeY">
+    </div>
+    <div class="d-flex justify-content-end">
+      <button class="btn btn-danger" (click)="create()">
+        Create
+      </button>
     </div>
   </div>
 
@@ -11,7 +24,7 @@
     <tbody>
     <tr>
       <td></td>
-      <td><button class="btn btn-success">up</button></td>
+      <td><button class="btn btn-success">UP</button></td>
       <td></td>
     </tr>
     <tr>
